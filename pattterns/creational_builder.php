@@ -93,7 +93,6 @@ class Actor
    public function __set($property, $value)
    {
       if (property_exists($this, $property)) {
-         echo 'set: '.$property .' = '.$value.PHP_EOL;
          $this->$property = $value;
       }
 
